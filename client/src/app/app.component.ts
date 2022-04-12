@@ -8,15 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   title = 'client';
-  users: any; //Mogu biti bilo kog tipa
+  users: any; //Moze biti bilo koji tip TypeScript:Off!
 
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
-    this.getUsers();
+    this.getUseres();
   }
 
-  getUsers() {
+  getUseres() {
     this.http.get('https://localhost:5001/api/users').subscribe(
       (response) => {
         this.users = response;

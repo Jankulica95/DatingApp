@@ -1,6 +1,5 @@
-<h2>App Component</h2>
+<h2>{{ title }}</h2>
 
 <ul>
-  <!-- Propertiji u Angularu su CaseSensitive!!! -->
-  <li *ngFor="let user of users">{{ user.id }} - {{ user.userName }}</li>
+  <li *ngFor="let user of users">{{ user.id }} {{ user.userName }}</li>
 </ul>
