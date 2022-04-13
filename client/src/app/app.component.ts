@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
-  title = 'client';
+  title = 'The Dating App';
   users: any; //Moze biti bilo koji tip TypeScript:Off!
 
   constructor(private http: HttpClient) {}
